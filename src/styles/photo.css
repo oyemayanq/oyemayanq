@@ -1,0 +1,10 @@
+.photo-image{
+    width:100%;
+    border-radius:10px;
+    cursor: pointer;
+    transition:transform 0.5s ease;
+}
+
+.photo-image:hover{
+    transform:scale(0.9);
+}

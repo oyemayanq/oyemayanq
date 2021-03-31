@@ -1,0 +1,212 @@
+.main-container {
+  padding: 0;
+}
+
+.grid {
+  position: absolute;
+  top: 0vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  grid-template-columns: repeat(24, 1fr);
+  z-index: 1;
+}
+
+.grid p {
+  outline: 1px solid white;
+}
+
+.floating-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0px solid red;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(24, 1fr);
+  z-index: 1;
+}
+
+.layer {
+  transition: transform ease 0.5s;
+}
+
+.main-subcontainer {
+  height: 90vh;
+  /*padding: 0 8rem;*/
+  padding-left: 4rem;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  border: 0px solid teal;
+}
+
+.main-text-container {
+  position: relative;
+  z-index: 3;
+  width: 67%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*padding-top: 17vh;*/
+  border: 0px solid red;
+}
+
+.main-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  position: relative;
+  margin-bottom: 4rem;
+  z-index: 1;
+}
+
+.main-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 7%;
+  height: 3.5px;
+  background-color: white;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.main-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.main-subtitle a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  z-index: 4;
+  border-bottom: 2px solid #084c61;
+}
+
+.main-activity {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  width: 55%;
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  top: 10vh;
+  height: 90vh;
+  width: 10vh;
+  background-color: black;
+  border: 0px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 4;
+}
+
+@media screen and (max-width: 1297px) {
+  .main-subcontainer {
+    padding: 0 2rem;
+  }
+  .footer {
+    padding-right: 0rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .main-subcontainer {
+    padding: 0 3rem;
+  }
+  .main-text-container {
+    width: 100%;
+  }
+  .main-title {
+    font-size: 3.4rem;
+    margin-bottom: 3.4rem;
+  }
+  .main-title::before {
+    width: 11%;
+  }
+  .main-subtitle {
+    width: 90%;
+    font-size: 1.3rem;
+  }
+  .main-activity {
+    width: 82%;
+    font-size: 1.2rem;
+  }
+  .footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-title {
+    font-size: 3rem;
+  }
+  .main-title::before {
+    width: 12%;
+    height: 3.5px;
+  }
+  .main-subtitle {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .main-activity {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .main-title {
+    font-size: 2.8rem;
+  }
+  .main-title::before {
+    width: 14%;
+    height: 4px;
+  }
+  .main-subtitle {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  .main-activity {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .main-subcontainer {
+    padding: 0 2rem;
+  }
+  .main-title {
+    font-size: 2.7rem;
+  }
+  .footer {
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 369px) {
+  .main-title {
+    font-size: 2.4rem;
+  }
+  .main-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-activity {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
